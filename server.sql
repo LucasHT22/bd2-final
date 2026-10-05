@@ -1,17 +1,8 @@
--- ============================================================
--- 3. CRIACAO DA BASE DE DADOS
--- ============================================================
-
 CREATE DATABASE BelezaLtda;
 GO
 
 USE BelezaLtda;
 GO
-
-
--- ============================================================
--- TABELAS (Modelo Logico Relacional)
--- ============================================================
 
 CREATE TABLE Regiao (
     codigo VARCHAR(10) NOT NULL,
@@ -150,9 +141,6 @@ CREATE TABLE ItemNotaFiscal (
 GO
 
 
--- ============================================================
--- 4. INSERCAO DE DADOS DE EXEMPLO
--- ============================================================
 
 -- Regioes
 INSERT INTO Regiao (codigo, nome) VALUES
@@ -254,10 +242,6 @@ VALUES
     (1004, 'PR04', 2);
 GO
 
-
--- ============================================================
--- 5. CONSULTAS
--- ============================================================
 
 -- A) Listar todos os pontos estrategicos de cada regiao
 
